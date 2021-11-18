@@ -1,0 +1,61 @@
+<div class="container register">
+  <div class="row mt-4">
+    <div class="col col-6 offset-3">
+      <form (ngSubmit)="handleSubmit(f); $event.preventDefault()" #f="ngForm">
+        <div class="my-3">
+          <div class="my-3">
+            <input
+              name="name"
+              id="name"
+              ngModel
+              class="form-control"
+              type="text"
+              placeholder="Full Name"
+            />
+          </div>
+          <div class="my-3">
+            <input
+              name="phone"
+              id="phone"
+              ngModel
+              class="form-control"
+              type="text"
+              placeholder="Contact Number"
+            />
+          </div>
+          <div class="my-3">
+            <input
+              name="subject"
+              id="subject"
+              ngModel
+              class="form-control"
+              type="text"
+              placeholder="Subject"
+            />
+          </div>
+          <div class="my-3">
+            <input
+              name="email"
+              id="email"
+              ngModel
+              class="form-control"
+              type="email"
+              placeholder="Email"
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              name="password"
+              id="password"
+              ngModel
+              class="form-control"
+              type="password"
+              placeholder="Password"
+            />
+          </div>
+          <button class="btn btn-primary w-100" type="submit">Register</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

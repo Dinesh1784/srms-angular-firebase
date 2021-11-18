@@ -1,0 +1,39 @@
+<div class="container addstudent">
+  <div class="row mt-3">
+    <div class="col col-6 offset-3">
+      <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+        <div class="my-3">
+          <input
+            type="text"
+            name="name"
+            id="name"
+            ngModel
+            class="form-control"
+            placeholder="Student Name"
+          />
+        </div>
+        <div class="my-3">
+          <input
+            type="text"
+            name="stdclass"
+            id="stdclass"
+            ngModel
+            class="form-control"
+            placeholder="Class"
+          />
+        </div>
+        <div class="my-3">
+          <input
+            type="text"
+            name="rollno"
+            id="rollno"
+            ngModel
+            class="form-control"
+            placeholder="Roll number"
+          />
+        </div>
+        <button class="btn btn-primary w-100" type="submit">Add Student</button>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,49 @@
+<div class="container addmark">
+  <div class="row mt-3">
+    <div class="col col-6 offset-3">
+      <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+        <div class="my-3">
+          <input
+            class="form-control"
+            name="name"
+            id="name"
+            ngModel
+            placeholder="Student Name"
+            type="text"
+          />
+        </div>
+        <div class="my-3">
+          <input
+            class="form-control"
+            name="stdRegno"
+            id="stdRegno"
+            ngModel
+            placeholder="Student Roll Number"
+            type="text"
+          />
+        </div>
+        <div class="my-3">
+          <input
+            class="form-control"
+            name="stdClass"
+            id="stdClass"
+            ngModel
+            placeholder="Class"
+            type="text"
+          />
+        </div>
+        <div class="my-3">
+          <input
+            class="form-control"
+            name="mark"
+            id="mark"
+            ngModel
+            placeholder="Mark Scored"
+            type="text"
+          />
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Add Mark</button>
+      </form>
+    </div>
+  </div>
+</div>

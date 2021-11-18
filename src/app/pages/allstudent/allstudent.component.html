@@ -1,0 +1,33 @@
+<div class="container allstudent">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">Student RollNumber</th>
+        <th scope="col">Student Name</th>
+        <th scope="col">Student Class</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let stud of student">
+      <tr>
+        <th scope="row">{{ stud.studentRollno }}</th>
+        <td>{{ stud.studentName }}</td>
+        <td>{{ stud.studentClass }}</td>
+        <td>
+          <div
+            class="btn-group"
+            role="group"
+            aria-label="Basic checkbox toggle button group"
+          >
+            <button class="btn btn-success">
+              <i class="far fa-edit"></i>
+            </button>
+            <button class="btn btn-danger">
+              <i class="fas fa-trash-alt"></i>
+            </button>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
