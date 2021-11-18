@@ -17,6 +17,9 @@ import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { PagenotfoundComponent } from './pages/pagenotfound/pagenotfound.component';
 import { ProfileComponent } from './pages/profile/profile.component';
+import { AddstudentComponent } from './pages/addstudent/addstudent.component';
+import { AllstudentComponent } from './pages/allstudent/allstudent.component';
+import { AddmarkComponent } from './pages/addmark/addmark.component';
 //forms
 import { FormsModule } from '@angular/forms';
 //httpclient
@@ -25,9 +28,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
-import { AddstudentComponent } from './pages/addstudent/addstudent.component';
-import { AllstudentComponent } from './pages/allstudent/allstudent.component';
-import { AddmarkComponent } from './pages/addmark/addmark.component';
 
 @NgModule({
   declarations: [

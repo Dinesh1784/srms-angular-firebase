@@ -16,6 +16,6 @@ export class AuthService {
     return this.auth.authState;
   }
   signOut() {
-    this.auth.signOut();
+    return this.auth.signOut();
   }
 }
